@@ -45,7 +45,7 @@ pipe.connect("prompt.prompt", "llm.messages")
 
 result = pipe.run({"fetcher": {"urls": [
     "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "https://www.tiktok.com/@nasa/video/7300000000000000000",
+    "https://www.tiktok.com/@nasa/video/7665075736742530317",
 ]}})
 print(result["llm"]["replies"][0].text)
 ```
