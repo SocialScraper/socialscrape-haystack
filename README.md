@@ -13,7 +13,7 @@ Python 3.11 or newer, Haystack 2.14 or newer. The package builds on the official
 
 | Class | What it does |
 |---|---|
-| `SocialScrapeTranscriptFetcher` | Video URLs in, one transcript `Document` per URL out. A URL that fails goes to `errors`, not an exception. |
+| `SocialScrapeTranscriptsFetcher` | Video URLs in, one transcript `Document` per URL out. A URL that fails goes to `errors`, not an exception. |
 | `SocialScrapeFetcher` | Runs any endpoint by id with its parameters and returns `Document`s: one per item of a list, one otherwise. |
 | `SocialScrapeToolset` | Eight tools for a Haystack `Agent`: profile, posts, one post, comments, transcript, search, endpoint lookup and call-any-endpoint. |
 
@@ -27,7 +27,7 @@ from haystack.components.builders import ChatPromptBuilder
 from haystack.components.generators.chat import OpenAIChatGenerator
 from haystack.components.preprocessors import DocumentSplitter
 from haystack.dataclasses import ChatMessage
-from socialscrape_haystack import SocialScrapeTranscriptFetcher
+from socialscrape_haystack import SocialScrapeTranscriptsFetcher
 
 template = [ChatMessage.from_user(
     "Summarize the main points of these transcripts.\n"
@@ -35,7 +35,7 @@ template = [ChatMessage.from_user(
 )]
 
 pipe = Pipeline()
-pipe.add_component("fetcher", SocialScrapeTranscriptFetcher())
+pipe.add_component("fetcher", SocialScrapeTranscriptsFetcher())
 pipe.add_component("splitter", DocumentSplitter(split_by="word", split_length=300, split_overlap=30))
 pipe.add_component("prompt", ChatPromptBuilder(template=template, required_variables=["documents"]))
 pipe.add_component("llm", OpenAIChatGenerator(model="gpt-4o-mini"))
@@ -56,10 +56,10 @@ A transcript Document has the transcript text as `content` and this `meta`: `url
 
 ### Errors
 
-`SocialScrapeTranscriptFetcher` does not fail a batch for one bad link. A URL that cannot be fetched (private video, unsupported link, no captions) is left out of `documents` and listed in `errors`:
+`SocialScrapeTranscriptsFetcher` does not fail a batch for one bad link. A URL that cannot be fetched (private video, unsupported link, no captions) is left out of `documents` and listed in `errors`:
 
 ```python
-result = SocialScrapeTranscriptFetcher().run(urls=["https://www.youtube.com/watch?v=dQw4w9WgXcQ", "https://example.com/nope"])
+result = SocialScrapeTranscriptsFetcher().run(urls=["https://www.youtube.com/watch?v=dQw4w9WgXcQ", "https://example.com/nope"])
 result["errors"]   # [{"url": "https://example.com/nope", "error": "..."}]
 ```
 

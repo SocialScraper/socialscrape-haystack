@@ -5,13 +5,13 @@ import pytest
 from haystack.utils import Secret
 from socialscrape import APIError
 
-from socialscrape_haystack import SocialScrapeTranscriptFetcher
+from socialscrape_haystack import SocialScrapeTranscriptsFetcher
 
 YT = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 
 
 def make(session, **kwargs):
-    fetcher = SocialScrapeTranscriptFetcher(api_key=Secret.from_token("ss_test_key"), **kwargs)
+    fetcher = SocialScrapeTranscriptsFetcher(api_key=Secret.from_token("ss_test_key"), **kwargs)
     fetcher._session = session
     return fetcher
 
@@ -59,26 +59,26 @@ def test_empty_urls(session):
 
 def test_async_batch(api, async_session):
     api.add("/v1/transcript", "transcript")
-    fetcher = SocialScrapeTranscriptFetcher(api_key=Secret.from_token("ss_test_key"))
+    fetcher = SocialScrapeTranscriptsFetcher(api_key=Secret.from_token("ss_test_key"))
     fetcher._session = async_session
     out = asyncio.run(fetcher.run_async(urls=[YT]))
     assert len(out["documents"]) == 1
 
 
 def test_serialization_round_trip(monkeypatch):
-    fetcher = SocialScrapeTranscriptFetcher(language="pt-BR", allow_long_transcription=True, max_age_days=5,
+    fetcher = SocialScrapeTranscriptsFetcher(language="pt-BR", allow_long_transcription=True, max_age_days=5,
                                             raise_on_failure=True, base_url="https://example.test")
     data = fetcher.to_dict()
     original = copy.deepcopy(data)
-    assert data["type"] == "socialscrape_haystack.transcripts.SocialScrapeTranscriptFetcher"
+    assert data["type"] == "socialscrape_haystack.transcripts.SocialScrapeTranscriptsFetcher"
     monkeypatch.setenv("SOCIALSCRAPE_API_KEY", "ss_test_key")
-    back = SocialScrapeTranscriptFetcher.from_dict(data)
+    back = SocialScrapeTranscriptsFetcher.from_dict(data)
     assert back.to_dict() == original and back.language == "pt-BR" and back.allow_long_transcription
 
 
 def test_token_secret_is_not_serializable():
     with pytest.raises(ValueError):
-        SocialScrapeTranscriptFetcher(api_key=Secret.from_token("ss_test_key")).to_dict()
+        SocialScrapeTranscriptsFetcher(api_key=Secret.from_token("ss_test_key")).to_dict()
 
 
 def test_pipeline_into_splitter_keeps_meta(api, session, monkeypatch):
@@ -87,7 +87,7 @@ def test_pipeline_into_splitter_keeps_meta(api, session, monkeypatch):
 
     monkeypatch.setenv("SOCIALSCRAPE_API_KEY", "ss_test_key")
     api.add("/v1/transcript", "transcript")
-    fetcher = SocialScrapeTranscriptFetcher()
+    fetcher = SocialScrapeTranscriptsFetcher()
     fetcher._session = session
     pipe = Pipeline()
     pipe.add_component("fetcher", fetcher)

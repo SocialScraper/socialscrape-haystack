@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "socialscrape-haystack"
-version = "0.1.0"
+version = "0.1.1"
 description = "Haystack components and agent tools for SocialScrape: profiles, posts, comments, search and video transcripts from social platforms as Documents."
 readme = "README.md"
 license = "MIT"

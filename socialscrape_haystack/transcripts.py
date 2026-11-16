@@ -1,4 +1,4 @@
-"""SocialScrapeTranscriptFetcher: video URLs in, transcript Documents out."""
+"""SocialScrapeTranscriptsFetcher: video URLs in, transcript Documents out."""
 
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ ENDPOINT = "transcript"
 
 
 @component
-class SocialScrapeTranscriptFetcher:
+class SocialScrapeTranscriptsFetcher:
     """Fetches the transcript of each video URL and returns one Document per URL.
 
     Works with the video links the SocialScrape transcript endpoint accepts:
@@ -33,9 +33,9 @@ class SocialScrapeTranscriptFetcher:
 
     Usage example:
     ```python
-    from socialscrape_haystack import SocialScrapeTranscriptFetcher
+    from socialscrape_haystack import SocialScrapeTranscriptsFetcher
 
-    fetcher = SocialScrapeTranscriptFetcher()
+    fetcher = SocialScrapeTranscriptsFetcher()
     result = fetcher.run(urls=["https://www.youtube.com/watch?v=dQw4w9WgXcQ"])
     result["documents"], result["errors"]
     ```
@@ -51,7 +51,7 @@ class SocialScrapeTranscriptFetcher:
         base_url: str | None = None,
     ) -> None:
         """
-        Create a SocialScrapeTranscriptFetcher.
+        Create a SocialScrapeTranscriptsFetcher.
 
         :param api_key: SocialScrape API key. Read from the `SOCIALSCRAPE_API_KEY` environment variable by default.
         :param language: Preferred caption language as a BCP 47 code, for example `en` or `pt-BR`.
@@ -140,7 +140,7 @@ class SocialScrapeTranscriptFetcher:
         )
 
     @classmethod
-    def from_dict(cls, data: dict[str, Any]) -> SocialScrapeTranscriptFetcher:
+    def from_dict(cls, data: dict[str, Any]) -> SocialScrapeTranscriptsFetcher:
         """Deserialize the component."""
         deserialize_secrets_inplace(data["init_parameters"], keys=["api_key"])
         return default_from_dict(cls, data)
