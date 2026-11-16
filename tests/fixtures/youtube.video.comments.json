@@ -1,0 +1,83 @@
+{
+ "ok": true,
+ "credits_charged": 1,
+ "credits_remaining": 4999,
+ "cached": false,
+ "cached_at": null,
+ "request_id": "req_d5366d88cd9d3f43e3076f5d",
+ "data": {
+  "object": "list",
+  "items": [
+   {
+    "object": "comment",
+    "platform": "youtube",
+    "id": "UgzHlseKEhh-IqOwYux4AaABAg",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&lc=UgzHlseKEhh-IqOwYux4AaABAg",
+    "post_id": "dQw4w9WgXcQ",
+    "parent_id": null,
+    "author": {
+     "id": "1000000001",
+     "handle": "sample_user",
+     "name": "Sample User",
+     "url": null,
+     "avatar_url": null,
+     "verified": false
+    },
+    "text": "So I just found that Rick Astley is still alive but Rick Astley if you see this, I saw this video by this channel named twisted translations and she did this song and I thought now Rick Astley has to sing this if he’s still alive which he i...",
+    "published_at": "2026-10-30T01:54:00Z",
+    "stats": {
+     "likes": null,
+     "replies": 0,
+     "dislikes": null
+    },
+    "is_pinned": null,
+    "is_by_creator": false,
+    "extra": {
+     "is_artist": false,
+     "is_edited": false,
+     "likes_approximate": true,
+     "likes_text": " ",
+     "published_at_approximate": true,
+     "published_text": "25 minutes ago"
+    }
+   },
+   {
+    "object": "comment",
+    "platform": "youtube",
+    "id": "UgzLCcwkcTYULOyoWnp4AaABAg",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&lc=UgzLCcwkcTYULOyoWnp4AaABAg",
+    "post_id": "dQw4w9WgXcQ",
+    "parent_id": null,
+    "author": {
+     "id": "1000000001",
+     "handle": "sample_user",
+     "name": "Sample User",
+     "url": null,
+     "avatar_url": null,
+     "verified": false
+    },
+    "text": "Never gonna give you up, Never Gonna let you down",
+    "published_at": "2026-10-30T01:53:00Z",
+    "stats": {
+     "likes": 1,
+     "replies": 0,
+     "dislikes": null
+    },
+    "is_pinned": null,
+    "is_by_creator": false,
+    "extra": {
+     "is_artist": false,
+     "is_edited": true,
+     "likes_text": "1",
+     "published_at_approximate": true,
+     "published_text": "26 minutes ago (edited)"
+    }
+   }
+  ],
+  "cursor": "Eg0SC2RRdzR3OVdnWGNRGAYyuAEKfGdldF9uZXdlc3RfZmlyc3QtLUNnZ0lnQVFWRjdmUk9CSUZDS2dnR0FBU0JRaUhJQmdBRWdVSWlTQVlBQklGQ0owZ0dBRVNCUWlJSUJnQUVnVUluaUFZQUJJRkNNZ2dHQUFpRGdvTUNQejZqdGNHRVBDUXEtOEJVQUJZQVEiESILZFF3NHc5V2dYY1EwAXgBKBQwAUIhZW5nYWdlbWVu...",
+  "has_more": true,
+  "parent": null
+ },
+ "cursor": "Eg0SC2RRdzR3OVdnWGNRGAYyuAEKfGdldF9uZXdlc3RfZmlyc3QtLUNnZ0lnQVFWRjdmUk9CSUZDS2dnR0FBU0JRaUhJQmdBRWdVSWlTQVlBQklGQ0owZ0dBRVNCUWlJSUJnQUVnVUluaUFZQUJJRkNNZ2dHQUFpRGdvTUNQejZqdGNHRVBDUXEtOEJVQUJZQVEiESILZFF3NHc5V2dYY1EwAXgBKBQwAUIhZW5nYWdlbWVu...",
+ "has_more": true
+}

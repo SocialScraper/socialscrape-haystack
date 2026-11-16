@@ -1,0 +1,15 @@
+{
+ "ok": true,
+ "credits_charged": 0,
+ "credits_remaining": 5000,
+ "cached": false,
+ "cached_at": null,
+ "request_id": "req_b0923da04322d1de219dc51e",
+ "data": {
+  "object": "credit_balance",
+  "credits_remaining": 5000,
+  "team_id": "team_01example"
+ },
+ "cursor": null,
+ "has_more": null
+}

@@ -1,0 +1,50 @@
+{
+ "ok": true,
+ "credits_charged": 1,
+ "credits_remaining": 4999,
+ "cached": false,
+ "cached_at": null,
+ "request_id": "req_7115b8735eb56e7912694547",
+ "data": {
+  "object": "profile",
+  "platform": "tiktok",
+  "id": "127905465618821121",
+  "handle": "khaby.lame",
+  "name": "Khabane lame",
+  "headline": null,
+  "url": "https://www.tiktok.com/@khaby.lame",
+  "kind": "creator",
+  "bio": "Se vuoi ridere sei nel posto giusto😎 If u wanna laugh u r in the right place😎",
+  "avatar_url": "https://example.com/avatar.jpeg",
+  "banner_url": null,
+  "verified": true,
+  "is_private": false,
+  "external_url": null,
+  "links": null,
+  "location": null,
+  "category": null,
+  "created_at": null,
+  "stats": {
+   "followers": 162967647,
+   "following": 82,
+   "posts": 1359,
+   "likes": 2691641827,
+   "views": null
+  },
+  "extra": {
+   "comment_setting": 0,
+   "download_setting": 0,
+   "duet_setting": 0,
+   "following_visible": true,
+   "friends": 77,
+   "is_commerce_user": false,
+   "is_organization": false,
+   "is_tiktok_seller": false,
+   "language": "en",
+   "sec_uid": "MS4wLjABAAAAwAg0rSzO65WQfz4RzQgGv2Xdv108BgPXhRrrmNVIHQZ9PO8-flwwRtEppYTS0OjA",
+   "stitch_setting": 0
+  }
+ },
+ "cursor": null,
+ "has_more": null
+}

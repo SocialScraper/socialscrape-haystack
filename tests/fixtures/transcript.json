@@ -1,0 +1,36 @@
+{
+ "ok": true,
+ "credits_charged": 1,
+ "credits_remaining": 4999,
+ "cached": false,
+ "cached_at": null,
+ "request_id": "req_54e6289e14c7b0e7ad9acc2d",
+ "data": {
+  "object": "transcript",
+  "platform": "youtube",
+  "video_id": "dQw4w9WgXcQ",
+  "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "language": "en",
+  "source": "captions",
+  "duration_seconds": 213.0,
+  "text": "Example transcript text. This is illustrative, not the video's real captions.",
+  "segments": [
+   {
+    "start": 0.0,
+    "end": 4.0,
+    "text": "Example transcript text."
+   },
+   {
+    "start": 4.0,
+    "end": 9.0,
+    "text": "This is illustrative, not the video's real captions."
+   }
+  ],
+  "available_languages": [
+   "en"
+  ],
+  "extra": null
+ },
+ "cursor": null,
+ "has_more": null
+}

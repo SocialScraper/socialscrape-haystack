@@ -1,0 +1,130 @@
+{
+ "ok": true,
+ "credits_charged": 1,
+ "credits_remaining": 4999,
+ "cached": false,
+ "cached_at": null,
+ "request_id": "req_9c85756efc6dcfd46a031c4b",
+ "data": {
+  "object": "list",
+  "items": [
+   {
+    "object": "post",
+    "platform": "reddit",
+    "id": "1w4c63y",
+    "url": "https://www.reddit.com/r/keyboards/comments/1w4c63y/whats_the_best_mechanical_keyboard_in_2026_price/",
+    "type": "text",
+    "author": {
+     "id": "t2_5x4fu9f7",
+     "handle": "freecoinsbabyhe",
+     "name": "freecoinsbabyhe",
+     "url": "https://www.reddit.com/user/freecoinsbabyhe/",
+     "avatar_url": "https://preview.redd.it/snoovatar/avatars/6ff9af10-ad8a-4778-bb10-f86b2f960908-headshot.png?width=64&height=64&crop=smart&auto=webp&s=edc6dca7962087ea86034c1cf48d10e1475a5bfc",
+     "verified": null
+    },
+    "title": "What's The Best Mechanical Keyboard In 2026? (Price, Switches)",
+    "text": "I tried my buddy's board recently with brown tactile switches he told me last week and I actually loved that little bump not too loud but you still feel it. I dont want super clicky blue loud stuff because I'm on calls a lot so I don't want...",
+    "published_at": "2026-09-01T13:34:26.788000Z",
+    "duration_seconds": null,
+    "language": null,
+    "hashtags": null,
+    "mentions": null,
+    "stats": {
+     "views": null,
+     "likes": 16,
+     "comments": 53,
+     "shares": null,
+     "saves": null,
+     "dislikes": null
+    },
+    "media": {
+     "thumbnail_url": null,
+     "video_url": null,
+     "audio_url": null,
+     "image_urls": null,
+     "width": null,
+     "height": null
+    },
+    "song": null,
+    "location": null,
+    "is_pinned": null,
+    "is_sponsored": null,
+    "extra": {
+     "award_count": 0,
+     "domain": "self.keyboards",
+     "enriched": true,
+     "post_type": "text",
+     "score": 16,
+     "snippet": "If you use a numpad at all ever, you might be like me and hate the TKL keyboard.",
+     "snippet_id": "t1_p78jam6",
+     "source": "reddit",
+     "subreddit": "keyboards",
+     "subreddit_id": "t5_2rm65",
+     "upvote_ratio": 0.9444444444444444
+    }
+   },
+   {
+    "object": "post",
+    "platform": "reddit",
+    "id": "1xpcepa",
+    "url": "https://www.reddit.com/r/MechanicalKeyboards/comments/1xpcepa/bestselling_keyboard_switches_of_october_2026/",
+    "type": "image",
+    "author": {
+     "id": "t2_1eacgwjk",
+     "handle": "dovenyi",
+     "name": "dovenyi",
+     "url": "https://www.reddit.com/user/dovenyi/",
+     "avatar_url": "https://styles.redditmedia.com/t5_nuspz/styles/profileIcon_snoob988dcf3-8e5a-48ae-9a1e-833fe88bbc5f-headshot-f.png?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=d1555d4ebc553a5428ceaed21e574a004c424d5c",
+     "verified": null
+    },
+    "title": "Best-selling keyboard switches of October 2026",
+    "text": "(Cover image: Akko Creamy Blue U1.)\n\nHere are the October switch rankings, based on a record-breaking 1.6 million switch sales reported by 18 shops and manufacturers.\n\nWelcome Wuque Studio as a new contributor (although providing a limited...",
+    "published_at": "2026-11-06T13:09:57.812000Z",
+    "duration_seconds": null,
+    "language": null,
+    "hashtags": null,
+    "mentions": null,
+    "stats": {
+     "views": null,
+     "likes": 334,
+     "comments": 67,
+     "shares": null,
+     "saves": null,
+     "dislikes": null
+    },
+    "media": {
+     "thumbnail_url": "https://preview.redd.it/best-selling-keyboard-switches-of-october-2026-v0-77sektp6rzzh1.jpeg?width=640&crop=smart&auto=webp&s=ca01b665e306362933dc24526e28e548d6cbdefa",
+     "video_url": null,
+     "audio_url": null,
+     "image_urls": [
+      "https://i.redd.it/77sektp6rzzh1.jpeg"
+     ],
+     "width": 640,
+     "height": 400
+    },
+    "song": null,
+    "location": null,
+    "is_pinned": null,
+    "is_sponsored": null,
+    "extra": {
+     "award_count": 0,
+     "domain": "i.redd.it",
+     "enriched": true,
+     "post_type": "image",
+     "score": 334,
+     "snippet": "Here are the October switch rankings, based on a record-breaking 1.6 million switch sales reported by 18 shops and manufacturers.",
+     "snippet_id": "t3_1xpcepa",
+     "source": "reddit",
+     "subreddit": "MechanicalKeyboards",
+     "subreddit_id": "t5_2ugo7",
+     "upvote_ratio": 0.9854651162790697
+    }
+   }
+  ],
+  "cursor": "rg1.L3N2Yy9zaHJlZGRpdC9zZWFyY2gvP3E9bWVjaGFuaWNhbCtrZXlib2FyZCZ0eXBlPXBvc3RzJnNvcnQ9cmVsZXZhbmNlJmN1cnNvcj1leUpqWVc1a2FXUmhkR1Z6WDNKbGRIVnlibVZrSWpvaWUxd2ljMlZqZEdsdmJsOHhYM0JwY0dWc2FXNWxYekJmWjJ4dlltRnNYMjF2WkdsbWFXVnljMXdpT2x3aU5Gd2lMRndp...",
+  "has_more": true,
+  "parent": null
+ },
+ "cursor": "rg1.L3N2Yy9zaHJlZGRpdC9zZWFyY2gvP3E9bWVjaGFuaWNhbCtrZXlib2FyZCZ0eXBlPXBvc3RzJnNvcnQ9cmVsZXZhbmNlJmN1cnNvcj1leUpqWVc1a2FXUmhkR1Z6WDNKbGRIVnlibVZrSWpvaWUxd2ljMlZqZEdsdmJsOHhYM0JwY0dWc2FXNWxYekJmWjJ4dlltRnNYMjF2WkdsbWFXVnljMXdpT2x3aU5Gd2lMRndp...",
+ "has_more": true
+}
